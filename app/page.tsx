@@ -20,8 +20,8 @@ export const metadata: Metadata = buildMetadata({
 
 const trustPillars = [
   {
-    title: "Firmengeschichte",
-    text: "Die Jäger GmbH steht seit vielen Jahren für verlässliche Techniklösungen und eine Beratung, die sich am realen Einsatz orientiert.",
+    title: "Seit 1977",
+    text: "Die Jäger GmbH wurde 1977 von Hubert Jäger gegründet und hat sich zu einem der führenden Anbieter für Oberflächenbehandlung und Industriereinigung in Österreich entwickelt.",
   },
   {
     title: "Regional verankert",
@@ -36,37 +36,44 @@ const trustPillars = [
 export default function Home() {
   return (
     <main id="main-content" className="flex-1">
-      <section className="relative flex min-h-screen items-center">
-        <div className="absolute inset-0 bg-zinc-900">
-          <div className="industrial-grid absolute inset-0 opacity-20" aria-hidden="true" />
-        </div>
+      <section className="relative flex min-h-screen items-center overflow-hidden border-b border-zinc-200 bg-white">
+        <div className="industrial-grid absolute inset-0 opacity-[0.045]" aria-hidden="true" />
         <div
-          className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/65 to-zinc-900/50"
+          className="absolute -right-40 -top-40 h-[700px] w-[700px] rounded-full bg-brand-500/20 blur-3xl"
+          aria-hidden="true"
+        />
+        <div
+          className="absolute -bottom-32 -left-32 h-[500px] w-[500px] rounded-full bg-brand-500/10 blur-3xl"
           aria-hidden="true"
         />
 
         <Container className="relative z-10 py-20 sm:py-28">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-brand-500/35 bg-brand-500/10 px-4 py-1.5">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-brand-500/40 bg-brand-500/10 px-4 py-1.5">
             <span className="h-1.5 w-1.5 rounded-full bg-brand-500" aria-hidden="true" />
-            <span className="text-xs font-bold uppercase tracking-[0.22em] text-brand-400">
+            <span className="text-xs font-bold uppercase tracking-[0.22em] text-brand-600">
               Ihr Partner für Baumaschinen
             </span>
           </div>
 
-          <h1 className="text-[clamp(2.8rem,8.5vw,7.5rem)] font-black uppercase leading-[0.88] tracking-tight">
-            <span className="block text-white">REINIGUNGSTECHNIK</span>
-            <span className="block text-brand-500">BAUMASCHINEN</span>
-            <span className="block text-white">MIETPARK</span>
+          <h1 className="text-[clamp(2.8rem,8.5vw,7.5rem)] font-black uppercase leading-[0.9] tracking-tight">
+            <span className="block text-zinc-900">REINIGUNGSTECHNIK</span>
+            <span className="block">
+              <span className="inline-block bg-brand-500 px-3 py-1 text-zinc-900">
+                BAUMASCHINEN
+              </span>
+            </span>
+            <span className="block text-zinc-900">MIETPARK</span>
           </h1>
 
-          <p className="mt-8 max-w-xl text-lg leading-relaxed text-zinc-400 sm:text-xl">
-            Ihr zuverlässiger Partner für Baumaschinen, Reinigungstechnik, Strahltechnik und
-            Industriereinigung in Österreich.
+          <p className="mt-10 max-w-xl text-lg leading-relaxed text-zinc-600 sm:text-xl">
+            Wir sind Ihr zuverlässiger Partner für Baumaschinen, Reinigungstechnik, Strahltechnik
+            und Industriereinigung. Mit langjähriger Branchenerfahrung bieten wir Geräte nach
+            höchsten Standards und individuellem Service.
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <Button href="/leistungen">Unsere Leistungen →</Button>
-            <Button href="/mietpark" variant="outline">
+            <Button href="/mietpark" variant="secondary">
               Mietpark entdecken
             </Button>
           </div>
@@ -148,15 +155,15 @@ export default function Home() {
         <Section
           id="mietpark"
           eyebrow="Mietpark"
-          title="Große Auswahl an Mietmaschinen für planbare und kurzfristige Einsätze."
-          description="Der Mietpark ergänzt das Produktspektrum ideal und bietet Unternehmen die nötige Flexibilität, wenn Technik schnell verfügbar sein muss."
+          title="Mietpark mit über 100 Maschinen für kurzfristige und planbare Einsätze."
+          description="Mit unserer flexiblen Mietlösung können Sie genau die Ausrüstung nutzen, die Sie benötigen – genau dann, wenn Sie sie brauchen."
         >
           <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(320px,0.8fr)]">
             <Card className="p-8">
-              <p className="text-sm uppercase tracking-[0.24em] text-slate-500">
+              <p className="text-sm uppercase tracking-[0.24em] text-brand-500">
                 Mietlösungen mit System
               </p>
-              <h3 className="mt-4 max-w-2xl text-2xl font-semibold tracking-tight text-white">
+              <h3 className="mt-4 max-w-2xl text-2xl font-semibold tracking-tight text-zinc-900">
                 Von Reinigungsgeräten über Strahltechnik bis zu Baumaschinen steht eine breite
                 Auswahl an Mietmaschinen für unterschiedliche Einsatzbereiche bereit.
               </h3>
@@ -164,7 +171,7 @@ export default function Home() {
                 {rentalHighlights.map((item) => (
                   <li
                     key={item}
-                    className="rounded-2xl border border-zinc-200 bg-zinc-50 px-5 py-4 text-sm text-slate-200"
+                    className="rounded-2xl border border-zinc-200 bg-zinc-50 px-5 py-4 text-sm text-zinc-700"
                   >
                     {item}
                   </li>
@@ -172,7 +179,7 @@ export default function Home() {
               </ul>
             </Card>
 
-            <Card className="flex flex-col justify-between bg-gradient-to-br from-slate-900 to-slate-950 p-8">
+            <Card className="flex flex-col justify-between p-8">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.28em] text-brand-500">
                   Schnell verfügbar
@@ -185,7 +192,7 @@ export default function Home() {
                 {rentalBenefits.map((item) => (
                   <li
                     key={item}
-                    className="rounded-2xl border border-zinc-200 bg-zinc-50 px-4 py-3 text-sm text-slate-300"
+                    className="rounded-2xl border border-zinc-200 bg-zinc-50 px-4 py-3 text-sm text-zinc-700"
                   >
                     {item}
                   </li>

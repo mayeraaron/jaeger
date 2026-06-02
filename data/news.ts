@@ -14,28 +14,28 @@ export type NewsItem = {
 
 export const newsItems: NewsItem[] = [
   {
-    slug: "mietpark-erweiterung",
-    title: "Mietpark laufend erweitert",
-    category: "News",
-    dateLabel: "April 2026",
+    slug: "jahresaktion-home-garden",
+    title: "Jahresaktion Home & Garden",
+    category: "Aktion",
+    dateLabel: "Aktion 2025",
     excerpt:
-      "Der Maschinenbestand wird laufend ausgebaut, damit für kurzfristige Einsätze und geplante Projekte rasch passende Technik bereitsteht.",
+      "Aktuelle Jahresaktion im Bereich Home & Garden: ausgewählte Reinigungsgeräte zu attraktiven Konditionen. Jetzt Angebot einholen.",
     content:
-      "Mit dem Ausbau des Mietparks stärkt die Jäger GmbH ihre Verfügbarkeit für Unternehmen, Bauprojekte und kommunale Anwendungen. Ziel ist es, Maschinen schnell und planbar bereitstellen zu können.",
-    ctaLabel: "Mietpark ansehen",
-    href: "/mietpark",
+      "Die Jahresaktion Home & Garden bietet ausgewählte Reinigungstechnik für den privaten und gewerblichen Einsatz zu Aktionspreisen. Für Details direkt bei der Jäger GmbH anfragen.",
+    ctaLabel: "Anfrage senden",
+    href: "/kontakt",
   },
   {
-    slug: "fruehjahrsaktion-reinigungstechnik",
-    title: "Frühjahrsaktion Reinigungstechnik",
+    slug: "jahresaktion-professional",
+    title: "Jahresaktion Professional",
     category: "Aktion",
-    dateLabel: "Aktion 2026",
+    dateLabel: "Aktion 2025",
     excerpt:
-      "Ausgewählte Reinigungstechnik wird in einer vorbereiteten Aktionsunterlage übersichtlich zusammengefasst und kann direkt als PDF geöffnet werden.",
+      "Aktuelle Jahresaktion im Professional-Bereich: leistungsstarke Reinigungstechnik für gewerbliche und industrielle Anwendungen.",
     content:
-      "Für saisonale Anforderungen und kurzfristige Investitionsentscheidungen stellt die Jäger GmbH eine kompakte Aktionsübersicht für Reinigungstechnik bereit.",
-    ctaLabel: "Aktion als PDF",
-    pdfHref: "/downloads/jaeger-fruehjahrsaktion-reinigungstechnik.pdf",
+      "Die Jahresaktion Professional richtet sich an Gewerbe- und Industriekunden mit erhöhten Anforderungen an Reinigungsleistung und Langlebigkeit. Für konkrete Angebote bitte direkt anfragen.",
+    ctaLabel: "Anfrage senden",
+    href: "/kontakt",
   },
   {
     slug: "mietpreisliste-download",

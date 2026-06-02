@@ -1,11 +1,20 @@
 export type NavItem = {
   label: string;
   href: string;
+  children?: NavItem[];
 };
 
 export const navigationItems: NavItem[] = [
   { label: "Home", href: "/" },
-  { label: "Leistungen", href: "/leistungen" },
+  {
+    label: "Leistungen",
+    href: "/leistungen",
+    children: [
+      { label: "Reinigungstechnik", href: "/leistungen/reinigungstechnik" },
+      { label: "Strahltechnik", href: "/leistungen/strahltechnik" },
+      { label: "Baumaschinen", href: "/leistungen/baumaschinen" },
+    ],
+  },
   { label: "Mietpark", href: "/mietpark" },
   { label: "Über uns", href: "/ueber-uns" },
   { label: "Kontakt", href: "/kontakt" },

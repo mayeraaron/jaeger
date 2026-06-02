@@ -24,17 +24,19 @@ export const serviceDetails: ServiceDetail[] = [
     eyebrow: "Leistungsbereich",
     heroTitle: "Reinigungstechnik für saubere Prozesse, Flächen und Betriebsabläufe.",
     heroText:
-      "Die Jäger GmbH bietet Reinigungstechnik für professionelle Anwendungen in Industrie, Gewerbe, Werkstatt und kommunalem Umfeld. Im Fokus stehen leistungsstarke Geräte, wirtschaftliche Lösungen und eine Beratung, die sich an realen Anforderungen orientiert.",
+      "Wir bieten eine breite Palette an hochwertigen Reinigungsgeräten und Zubehör für verschiedenste Anwendungen und Branchen – sowohl zum Kauf als auch zur Miete. Unser Fokus liegt auf individuellem Service und Beratung, um Ihre Projekte effizient zu unterstützen.",
     overviewText:
-      "Leistungsstarke Reinigungslösungen für Innen- und Außenbereiche, abgestimmt auf professionelle Anforderungen im täglichen Einsatz.",
+      "Instandhaltung, Servicieren und Reparieren von Reinigungsgeräten – mit umfangreichem Sortiment von etablierten Herstellern wie Kärcher für Zuverlässigkeit und Effizienz.",
     description: [
-      "Reinigungstechnik muss im Alltag zuverlässig funktionieren, wirtschaftlich einsetzbar sein und unterschiedliche Flächen sowie Verschmutzungsgrade sicher bewältigen. Genau hier setzt das Leistungsangebot der Jäger GmbH an.",
-      "Von der Beratung bis zur passenden Gerätelösung unterstützt das Unternehmen Betriebe und öffentliche Auftraggeber dabei, Reinigungsaufgaben effizient, nachvollziehbar und mit praxistauglicher Technik umzusetzen.",
+      "Von hochwertigen Hochdruckreinigern über Industriestaubsauger bis hin zu Bodenreinigungsmaschinen und Dampfreinigern bietet die Jäger GmbH ein umfangreiches Sortiment etablierter Hersteller für professionelle Anwendungen in Industrie, Gewerbe, Werkstatt und kommunalem Umfeld.",
+      "Neben dem Verkauf steht auch eine flexible Vermietung zur Verfügung – mit regelmäßig gewarteter Ausrüstung sowie Beratungs- und Schulungsleistungen für einen sicheren und wirtschaftlichen Einsatz.",
     ],
     benefits: [
-      "Zuverlässige Technik für den regelmäßigen und intensiven Einsatz",
-      "Passende Lösungen für Innenflächen, Außenbereiche und Betriebsumgebungen",
-      "Beratung mit Blick auf Wirtschaftlichkeit, Handling und Einsatzdauer",
+      "Hochdruckreiniger für Außenbereiche, Fahrzeuge und Maschinen",
+      "Industriestaubsauger zur Schmutz- und Flüssigkeitsentfernung",
+      "Bodenreinigungsmaschinen für großflächige Bereiche",
+      "Dampfreiniger als chemiefreie Reinigungslösung",
+      "Zubehör und Ersatzteile: Bürsten, Düsen, Filter und Schläuche",
     ],
     useCases: [
       "Reinigung von Produktions-, Lager- und Werkstattflächen",
@@ -49,22 +51,23 @@ export const serviceDetails: ServiceDetail[] = [
     shortTitle: "Strahltechnik",
     href: "/leistungen/strahltechnik",
     eyebrow: "Leistungsbereich",
-    heroTitle: "Strahltechnik für Oberflächenbearbeitung, Sanierung und präzise Reinigung.",
+    heroTitle: "Strahltechnik – Effektive Oberflächenbehandlung für jede Anwendung.",
     heroText:
-      "Mit moderner Strahltechnik unterstützt die Jäger GmbH Anwendungen, bei denen Oberflächen gezielt bearbeitet, gereinigt oder für weitere Arbeitsschritte vorbereitet werden müssen. Entscheidend sind dabei Kontrolle, Präzision und die passende Technik für das jeweilige Material.",
+      "Wir bieten präzise und effektive Methoden zur Oberflächenbehandlung für diverse Materialien. Die Leistungen umfassen Reinigung, Entgratung, Oberflächenvorbereitung und Veredelung – mit der jeweils passenden Technik für das jeweilige Material.",
     overviewText:
-      "Technik für präzise Oberflächenbearbeitung und anspruchsvolle Reinigungsaufgaben in Sanierung, Instandhaltung und Vorbereitung.",
+      "Präzise Oberflächenbehandlung mit Eis-, Glasperlen-, Sponge- und Granatsandstrahlen für Sanierung, Instandhaltung und Vorbereitung.",
     description: [
-      "Strahltechnik kommt überall dort zum Einsatz, wo konventionelle Reinigungsverfahren an ihre Grenzen stoßen oder Oberflächen gezielt vorbereitet werden müssen. Dazu gehören Sanierung, Entschichtung, Reinigung und materialschonende Bearbeitung.",
-      "Die Jäger GmbH unterstützt bei der Auswahl geeigneter Technik für unterschiedliche Anforderungen und schafft so die Grundlage für saubere, kontrollierte und reproduzierbare Ergebnisse.",
+      "Eisstrahlen mit Trockeneis (CO₂) ist eine umweltfreundliche Methode zur Reinigung von Oberflächen: rückstandsfrei, schonend zu empfindlichen Materialien und wirksam gegen organische wie anorganische Verunreinigungen. Glasperlenstrahlen verleiht ein gleichmäßiges, mattes Finish und stärkt die Materialoberfläche – besonders für Metallveredelung geeignet.",
+      "Sponge-Strahlen mit schwammähnlichen Partikeln kombiniert Präzision mit minimaler Staubentwicklung – ideal für geschlossene Räume. Granatsandstrahlen nutzt Granatsand als leistungsstarkes, recyclebares Strahlmittel für kraftvolle Entrostung und Beschichtungsentfernung.",
     ],
     benefits: [
-      "Hohe Präzision bei Reinigung und Oberflächenvorbereitung",
-      "Geeignete Technik für unterschiedliche Materialien und Einsatzbedingungen",
-      "Beratung für effiziente und fachgerechte Bearbeitungsprozesse",
+      "Eisstrahlen: rückstandsfrei, schonend, wirksam gegen organische und anorganische Verunreinigungen",
+      "Glasperlenstrahlen: gleichmäßiges mattes Finish, ideal für Metallveredelung",
+      "Sponge-Strahlen: minimale Staubentwicklung, präzise – ideal für geschlossene Räume",
+      "Granatsandstrahlen: leistungsstarke Entrostung, umweltfreundlich und recyclebar",
     ],
     useCases: [
-      "Entfernung von Beschichtungen, Rückständen und Ablagerungen",
+      "Entfernung von Beschichtungen, Rost und Ablagerungen",
       "Vorbereitung von Oberflächen für weitere Bearbeitungsschritte",
       "Sanierungs- und Instandhaltungsarbeiten im gewerblichen Umfeld",
     ],
@@ -78,17 +81,19 @@ export const serviceDetails: ServiceDetail[] = [
     eyebrow: "Leistungsbereich",
     heroTitle: "Baumaschinen für Baustelle, Infrastruktur und professionelle Ausführung.",
     heroText:
-      "Die Jäger GmbH bietet Baumaschinen für unterschiedliche Einsatzbereiche im Bau- und Infrastruktursektor. Im Mittelpunkt stehen robuste Technik, praxistaugliche Lösungen und eine Auswahl, die sich am konkreten Bedarf orientiert.",
+      "Wir bieten eine umfassende Auswahl an Baumaschinen von führenden Herstellern, die sich durch Zuverlässigkeit, Langlebigkeit und hohe Leistung auszeichnen – sowohl zum Kauf als auch zur Miete.",
     overviewText:
-      "Robuste Maschinenlösungen für Bau, Abbruch, Materialhandling und infrastrukturelle Aufgaben mit professionellem Anspruch.",
+      "Moderne Baumaschinen und Zubehör für Baustelle und Infrastruktur – mit fachkundiger Beratung und flexiblen Mietoptionen für zeitkritische Projekte.",
     description: [
-      "Baumaschinen müssen auf der Baustelle funktionieren, verfügbar sein und zu den tatsächlichen Anforderungen des Projekts passen. Deshalb setzt die Jäger GmbH auf Lösungen, die im professionellen Einsatz überzeugen.",
-      "Unternehmen erhalten Unterstützung bei der Auswahl geeigneter Maschinen für typische Bauaufgaben, für infrastrukturelle Arbeiten und für Projekte, bei denen Zuverlässigkeit und kurze Wege entscheidend sind.",
+      "Das Sortiment umfasst Estrichpumpen, Kompressoren, Bagger, Stromaggregate und Betonschleifmaschinen von führenden Herstellern für professionelle Einsätze im Bau- und Infrastrukturbereich.",
+      "Neben dem Kauf steht auch ein flexibler Mietservice zur Verfügung – mit modernen, regelmäßig gewarteten Maschinen und fachkundiger Beratung für die Auswahl der richtigen Technik für Ihr Projekt.",
     ],
     benefits: [
-      "Praxisgerechte Maschinen für unterschiedliche Einsatzszenarien",
-      "Fokus auf Verfügbarkeit, Belastbarkeit und wirtschaftlichen Einsatz",
-      "Direkte Beratung für projektgerechte Auswahl und Planung",
+      "Estrichpumpen für Boden- und Deckenestrich",
+      "Kompressoren für Baustellen und gewerbliche Anwendungen",
+      "Bagger für Erd- und Abbrucharbeiten",
+      "Stromaggregate für netzunabhängige Stromversorgung",
+      "Betonschleifmaschinen für Oberflächen und Beschichtungen",
     ],
     useCases: [
       "Maschineneinsatz auf Baustellen und in Infrastrukturprojekten",

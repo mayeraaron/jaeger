@@ -2,14 +2,14 @@ export const companyDetails = {
   name: "Jäger GmbH",
   tagline:
     "Reinigungstechnik, Strahltechnik, Baumaschinen und Mietlösungen für Betriebe, Bau und kommunale Anwendungen.",
-  address: ["Industriestraße 12", "6833 Klaus", "Vorarlberg"],
-  phone: "+43 7229 12345",
-  phoneHref: "tel:+43722912345",
-  email: "office@jaeger-gmbh.at",
-  emailHref: "mailto:office@jaeger-gmbh.at",
+  address: ["Treietstraße 2a", "6833 Klaus"],
+  phone: "+43 5523 62726-0",
+  phoneHref: "tel:+43552362726",
+  email: "office@jaeger.at",
+  emailHref: "mailto:office@jaeger.at",
   hours: [
-    "Mo - Do: 07:00 - 17:00",
-    "Fr: 07:00 - 12:00",
-    "Sa - So: geschlossen",
+    "Mo – Fr: 07:30 – 12:00 Uhr",
+    "Mo – Fr: 13:30 – 17:00 Uhr",
+    "Sa: Termin nach Vereinbarung",
   ],
 };

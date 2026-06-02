@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 
-import { companyDetails } from "@/data/company";
 import { LegalPage } from "@/components/legal/legal-page";
 import { buildMetadata } from "@/lib/seo";
 
@@ -16,35 +15,52 @@ export default function ImpressumPage() {
     <LegalPage
       eyebrow="Rechtliches"
       title="Impressum"
-      description="Übersicht der Anbieterkennzeichnung und rechtlich relevanten Stammdaten der Jäger GmbH in einer klar gegliederten, gut lesbaren Struktur."
+      description="Informationen und Offenlegung gemäß §5 (1) ECG, § 25 MedienG, § 63 GewO und § 14 UGB"
       sections={[
         {
-          heading: "Angaben gemäß Unternehmensauftritt",
+          heading: "Webseitenbetreiber",
           paragraphs: [
-            `${companyDetails.name}`,
-            `${companyDetails.address[0]}, ${companyDetails.address[1]}, ${companyDetails.address[2]}`,
-            `Telefon: ${companyDetails.phone} | E-Mail: ${companyDetails.email}`,
+            "Jäger GmbH",
+            "Treietstraße 2a, 6833 Klaus",
+            "Firmenbuchnummer: FN 200291 x",
+            "Firmenbuchgericht: Landesgericht Feldkirch",
+            "UID-Nr: ATU50139103",
+            "Gewerbeaufsichtsbehörde: Bezirkshauptmannschaft Feldkirch",
+            "Mitgliedschaften: WKV, WKÖ",
           ],
         },
         {
-          heading: "Unternehmensgegenstand",
+          heading: "Kontaktdaten",
           paragraphs: [
-            "Die Jäger GmbH ist im Bereich Reinigungstechnik, Strahltechnik, Baumaschinen und Mietlösungen tätig und richtet ihr Angebot an gewerbliche, baunahe und kommunale Einsatzbereiche.",
-            "Diese Seite dient als sauber strukturierte Impressumsgrundlage und kann im nächsten Schritt mit den verbindlichen Unternehmensdaten, Firmenbuchangaben und vertretungsbefugten Personen ergänzt werden.",
+            "Telefon: 05523 62726-0",
+            "Fax: 05523 62726-22",
+            "Email: office@jaeger.at",
           ],
         },
         {
-          heading: "Verantwortung für den Inhalt",
+          heading: "Anwendbare Rechtsvorschrift",
           paragraphs: [
-            "Für den Inhalt dieser Website ist die Jäger GmbH verantwortlich. Die Inhalte werden mit Sorgfalt gepflegt, dienen jedoch in dieser Projektphase noch als vorbereitete Struktur für die finalen Rechtstexte.",
-            "Bitte ergänzen Sie hier bei Bedarf konkrete Angaben zu Geschäftsführung, Firmenbuchnummer, UID-Nummer, Aufsichtsbehörde oder Kammerzugehörigkeit.",
+            "www.ris.bka.gv.at",
           ],
         },
         {
-          heading: "Haftungshinweis",
+          heading: "Online Streitbeilegung",
           paragraphs: [
-            "Alle Angaben auf dieser Website wurden mit dem Ziel erstellt, das Unternehmen und seine Leistungen nachvollziehbar darzustellen. Eine Gewähr für Vollständigkeit, Aktualität und rechtliche Vollständigkeit der hier vorbereiteten Musterinhalte wird in dieser Fassung nicht übernommen.",
-            "Sobald die finalen Rechtstexte vorliegen, können sie in diese Struktur ohne weitere Layout-Anpassungen eingepflegt werden.",
+            "Verbraucher mit Sitz in Österreich oder einem sonstigen Vertragsstaat der ODR-VO haben die Möglichkeit, Probleme bezüglich dem entgeltlichen Kauf von Waren oder Dienstleistungen im Rahmen einer Online-Streitbeilegung (nach OS, AStG) zu lösen.",
+            "Die Europäische Kommission stellt eine Plattform hierfür bereit: https://ec.europa.eu/consumers/odr",
+          ],
+        },
+        {
+          heading: "Urheberrecht",
+          paragraphs: [
+            "Die Inhalte dieser Webseite unterliegen, soweit dies rechtlich möglich ist, diversen Schutzrechten (z.B. dem Urheberrecht). Eine Verwendung/Verbreitung von bereitgestelltem Material bedarf der schriftlichen Zustimmung des Webseitenbetreibers.",
+          ],
+        },
+        {
+          heading: "Haftungsausschluss",
+          paragraphs: [
+            "Trotz sorgfältiger inhaltlicher Kontrolle übernimmt der Webseitenbetreiber dieser Webseite keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.",
+            "Soweit auf dieser Webseite in Text, Bild oder anderen Formaten auf Inhalte Dritter zurückgegriffen wird, sind die Urheberrechte dieser Dritten zu beachten und stammen diese Inhalte – sofern dies nicht anders vermerkt ist – aus öffentlich zugänglichen Quellen. Sollten Sie der Meinung sein, dass Inhalte auf dieser Webseite Ihre Rechte verletzen, informieren Sie bitte den Webseitenbetreiber, damit entsprechende Maßnahmen eingeleitet werden können.",
           ],
         },
       ]}
