@@ -108,6 +108,8 @@ async function sendWithResend(payload: ContactDeliveryPayload): Promise<ContactS
   }
 
   if (!response.ok) {
+    const errorBody = await response.json().catch(() => ({}));
+    console.error("[Resend error]", response.status, JSON.stringify(errorBody));
     return {
       ok: false,
       message:

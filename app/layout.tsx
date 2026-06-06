@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 
+import { CookieBanner } from "@/components/layout/cookie-banner";
 import { PartnerBrands } from "@/components/layout/partner-brands";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
@@ -24,6 +25,7 @@ export default function RootLayout({
           {children}
           <PartnerBrands />
           <SiteFooter />
+          <CookieBanner />
         </div>
       </body>
     </html>

@@ -6,7 +6,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Datenschutz",
   description:
-    "Datenschutzhinweise der Jäger GmbH für Website, Kontaktaufnahme und Datenverarbeitung mit Bezug zu Klaus, Vorarlberg.",
+    "Datenschutzerklärung der Jäger GmbH gemäß DSGVO für Website, Kontaktaufnahme und Datenverarbeitung.",
   path: "/datenschutz",
 });
 
@@ -14,42 +14,102 @@ export default function DatenschutzPage() {
   return (
     <LegalPage
       eyebrow="Rechtliches"
-      title="Datenschutz"
-      description="Datenschutzhinweise in einer ruhigen, gut lesbaren Seitenstruktur mit klaren Überschriften und ausreichend Abstand für längere Rechtstexte."
+      title="Datenschutzerklärung"
+      description="Informationen zur Verarbeitung personenbezogener Daten gemäß der Datenschutz-Grundverordnung (DSGVO) und dem österreichischen Datenschutzgesetz (DSG)."
       sections={[
         {
-          heading: "Allgemeine Hinweise",
+          heading: "Verantwortlicher",
           paragraphs: [
-            "Der Schutz personenbezogener Daten ist für die Jäger GmbH ein wichtiges Anliegen. Diese Seite bildet die strukturelle Grundlage für eine vollständige Datenschutzerklärung und kann mit den finalen, rechtlich abgestimmten Texten ergänzt werden.",
-            "Verarbeitet werden personenbezogene Daten nur in dem Umfang, der für den Betrieb der Website, die Bearbeitung von Anfragen und die technische Bereitstellung der Inhalte erforderlich ist.",
+            "Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:",
+            "Jäger GmbH · Treietstraße 2a · 6833 Klaus · Österreich",
+            "Telefon: 05523 62726-0 · E-Mail: office@jaeger.at",
+          ],
+        },
+        {
+          heading: "Allgemeines zur Datenverarbeitung",
+          paragraphs: [
+            "Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir verarbeiten Ihre Daten daher ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, DSG).",
+            "In dieser Datenschutzerklärung informieren wir Sie über die wichtigsten Aspekte der Datenverarbeitung im Rahmen unserer Website.",
+          ],
+        },
+        {
+          heading: "Datenverarbeitung beim Besuch unserer Website",
+          paragraphs: [
+            "Beim Aufrufen unserer Website werden durch den auf Ihrem Endgerät zum Einsatz kommenden Browser automatisch Informationen an den Server unserer Website gesendet. Diese Informationen werden temporär in einem sogenannten Logfile gespeichert.",
+            "Folgende Informationen werden dabei ohne Ihr Zutun erfasst und bis zur automatisierten Löschung gespeichert:",
+          ],
+          list: [
+            "IP-Adresse des anfragenden Rechners",
+            "Datum und Uhrzeit des Zugriffs",
+            "Name und URL der abgerufenen Datei",
+            "Website, von der aus der Zugriff erfolgt (Referrer-URL)",
+            "Verwendeter Browser und ggf. das Betriebssystem Ihres Rechners",
+            "Name Ihres Access-Providers",
+          ],
+        },
+        {
+          heading: "Zweck und Rechtsgrundlage der Verarbeitung",
+          paragraphs: [
+            "Die genannten Daten werden zu folgenden Zwecken verarbeitet: Gewährleistung eines reibungslosen Verbindungsaufbaus der Website, Gewährleistung einer komfortablen Nutzung unserer Website, Auswertung der Systemsicherheit und -stabilität sowie zu weiteren administrativen Zwecken.",
+            "Die Rechtsgrundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse folgt aus den oben aufgelisteten Zwecken zur Datenerhebung.",
           ],
         },
         {
           heading: "Kontaktaufnahme",
           paragraphs: [
-            "Wenn Besucher per E-Mail oder über ein Kontaktformular mit dem Unternehmen in Verbindung treten, werden die übermittelten Angaben zur Bearbeitung der Anfrage und für mögliche Rückfragen verwendet.",
-            "In der finalen Datenschutzerklärung sollten hier die konkrete Rechtsgrundlage, Speicherdauer und die zuständige Stelle für die Datenverarbeitung ergänzt werden.",
+            "Treten Sie per Formular auf unserer Website oder per E-Mail mit uns in Kontakt, werden Ihre angegebenen Daten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.",
+            "Die Verarbeitung der in das Kontaktformular eingegebenen Daten erfolgt ausschließlich auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Sie können diese Einwilligung jederzeit widerrufen.",
+            "Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z.B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen – bleiben unberührt.",
           ],
         },
         {
-          heading: "Server- und Zugriffsdaten",
+          heading: "Cookies",
           paragraphs: [
-            "Beim Aufruf der Website können technisch notwendige Daten verarbeitet werden, um die Seite stabil, sicher und nachvollziehbar auszuliefern. Dazu zählen typischerweise Zugriffsdaten, Browserinformationen oder Zeitpunkte von Aufrufen.",
-            "Für die rechtsverbindliche Fassung sollte dieser Abschnitt um konkrete Angaben zur Hosting-Umgebung, zu Logfiles sowie zu Aufbewahrungsfristen ergänzt werden.",
+            "Unsere Website verwendet Cookies. Dabei handelt es sich um kleine Textdateien, die auf Ihrem Endgerät gespeichert werden. Cookies richten keinen Schaden an.",
+            "Wir nutzen Cookies dazu, unser Angebot nutzerfreundlich zu gestalten. Einige Cookies bleiben auf Ihrem Endgerät gespeichert, bis Sie diese löschen. Sie ermöglichen es uns, Ihren Browser beim nächsten Besuch wiederzuerkennen.",
+            "Wenn Sie dies nicht wünschen, können Sie Ihren Browser so einrichten, dass er Sie über das Setzen von Cookies informiert und Sie dies nur im Einzelfall erlauben. Bei der Deaktivierung von Cookies kann die Funktionalität unserer Website eingeschränkt sein.",
           ],
         },
         {
-          heading: "Rechte betroffener Personen",
+          heading: "SSL-Verschlüsselung",
           paragraphs: [
-            "Betroffene Personen haben nach Maßgabe der geltenden Datenschutzbestimmungen unter anderem das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Widerspruch.",
-            "Ebenso kann ein Beschwerderecht bei der zuständigen Datenschutzbehörde bestehen. Die genaue Ausgestaltung dieser Rechte sollte in der finalen Fassung rechtlich präzise ausformuliert werden.",
+            'Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte eine SSL-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von "http://" auf "https://" wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.',
+            "Wenn die SSL-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.",
           ],
         },
         {
-          heading: "Hinweis zur Finalisierung",
+          heading: "Ihre Rechte",
           paragraphs: [
-            "Die vorliegende Seite ist bewusst als gut lesbare inhaltliche Struktur angelegt, damit die spätere Einpflege einer vollständigen Datenschutzerklärung ohne gestalterische Nacharbeit erfolgen kann.",
-            "Vor Veröffentlichung sollten alle datenschutzrechtlich relevanten Prozesse, Tools und Kontaktwege vollständig geprüft und inhaltlich ergänzt werden.",
+            "Ihnen stehen bezüglich Ihrer bei uns gespeicherten Daten grundsätzlich folgende Rechte zu:",
+          ],
+          list: [
+            "Recht auf Auskunft (Art. 15 DSGVO)",
+            "Recht auf Berichtigung (Art. 16 DSGVO)",
+            "Recht auf Löschung (Art. 17 DSGVO)",
+            "Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)",
+            "Recht auf Datenübertragbarkeit (Art. 20 DSGVO)",
+            "Recht auf Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)",
+            "Recht auf Widerruf einer erteilten Einwilligung (Art. 7 Abs. 3 DSGVO)",
+          ],
+        },
+        {
+          heading: "Recht auf Widerruf",
+          paragraphs: [
+            "Sie haben das Recht, Ihre datenschutzrechtliche Einwilligungserklärung jederzeit zu widerrufen. Durch den Widerruf der Einwilligung wird die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung nicht berührt.",
+          ],
+        },
+        {
+          heading: "Beschwerderecht bei der Aufsichtsbehörde",
+          paragraphs: [
+            "Im Falle datenschutzrechtlicher Verstöße steht dem Betroffenen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu. Zuständige Aufsichtsbehörde in datenschutzrechtlichen Fragen ist die österreichische Datenschutzbehörde:",
+            "Österreichische Datenschutzbehörde · Barichgasse 40-42 · 1030 Wien · dsb@dsb.gv.at · www.dsb.gv.at",
+          ],
+        },
+        {
+          heading: "Aktualität und Änderung dieser Datenschutzerklärung",
+          paragraphs: [
+            "Diese Datenschutzerklärung ist aktuell gültig und hat den Stand Juni 2025.",
+            "Durch die Weiterentwicklung unserer Website und Angebote oder aufgrund geänderter gesetzlicher beziehungsweise behördlicher Vorgaben kann es notwendig werden, diese Datenschutzerklärung zu ändern. Die jeweils aktuelle Datenschutzerklärung kann jederzeit auf der Website von Ihnen abgerufen und ausgedruckt werden.",
           ],
         },
       ]}

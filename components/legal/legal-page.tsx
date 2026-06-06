@@ -2,7 +2,8 @@ import { Container } from "@/components/ui/container";
 
 type LegalSection = {
   heading: string;
-  paragraphs: string[];
+  paragraphs?: string[];
+  list?: string[];
 };
 
 type LegalPageProps = {
@@ -37,7 +38,7 @@ export function LegalPage({ eyebrow, title, description, sections }: LegalPagePr
                     {section.heading}
                   </h2>
                   <div className="space-y-4">
-                    {section.paragraphs.map((paragraph) => (
+                    {section.paragraphs?.map((paragraph) => (
                       <p
                         key={paragraph}
                         className="max-w-none text-[15px] leading-8 text-zinc-600 sm:text-base"
@@ -45,6 +46,19 @@ export function LegalPage({ eyebrow, title, description, sections }: LegalPagePr
                         {paragraph}
                       </p>
                     ))}
+                    {section.list && (
+                      <ul className="space-y-2 pl-1">
+                        {section.list.map((item) => (
+                          <li
+                            key={item}
+                            className="flex gap-3 text-[15px] leading-7 text-zinc-600 sm:text-base"
+                          >
+                            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-500" />
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </div>
                 </section>
               ))}
