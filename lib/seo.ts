@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 const siteName = "Jäger GmbH";
-const siteUrl = "https://www.jaeger-gmbh.at";
+const siteUrl = "https://www.jaeger.at";
 const defaultDescription =
   "Jäger GmbH in Klaus, Vorarlberg: Reinigungstechnik, Strahltechnik, Baumaschinen, Mietpark und persönliche Beratung für Unternehmen, Bau und Gewerbe.";
 
