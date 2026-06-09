@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { Container } from "@/components/ui/container";
 
 type LegalSection = {
@@ -18,6 +20,15 @@ export function LegalPage({ eyebrow, title, description, sections }: LegalPagePr
     <main id="main-content" className="flex-1">
       <Container className="py-16 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-4xl">
+          <Link
+            href="/"
+            className="mb-8 inline-flex items-center gap-1.5 text-sm font-medium text-zinc-500 transition-colors hover:text-zinc-900"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4" aria-hidden="true">
+              <path fillRule="evenodd" d="M17 10a.75.75 0 01-.75.75H5.612l4.158 3.96a.75.75 0 11-1.04 1.08l-5.5-5.25a.75.75 0 010-1.08l5.5-5.25a.75.75 0 111.04 1.08L5.612 9.25H16.25A.75.75 0 0117 10z" clipRule="evenodd" />
+            </svg>
+            Zur Startseite
+          </Link>
           <header className="mb-12 border-b border-zinc-200 pb-10 sm:mb-14 sm:pb-12">
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.28em] text-brand-500">
               {eyebrow}
