@@ -46,16 +46,24 @@ export function MobileNav({ items }: MobileNavProps) {
         {isOpen ? "Schließen" : "Menü"}
       </button>
 
+      {isOpen && (
+        <div
+          className="fixed inset-0 z-40"
+          aria-hidden="true"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
+
       <div
         id="mobile-navigation"
         className={cn(
-          "absolute right-0 top-full z-50 w-[min(20rem,calc(100vw-2rem))] overflow-hidden transition-[opacity,transform,visibility] duration-200",
+          "absolute right-0 top-full z-50 w-[min(20rem,calc(100vw-2rem))] transition-[opacity,transform,visibility] duration-200",
           isOpen
             ? "visible translate-y-3 opacity-100"
             : "invisible pointer-events-none translate-y-1 opacity-0",
         )}
       >
-        <div className="rounded-3xl border border-zinc-200 bg-white p-3 shadow-[0_8px_32px_rgba(0,0,0,0.12)]">
+        <div className="overflow-hidden rounded-3xl border border-zinc-200 bg-white p-3 shadow-[0_8px_32px_rgba(0,0,0,0.12)]">
           <nav aria-label="Mobile Navigation">
             <ul className="flex flex-col gap-1">
               {items.map((item) => {

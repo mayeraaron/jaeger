@@ -41,11 +41,11 @@ export default function KontaktPage() {
             <div className="mt-6 grid gap-4">
               <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-5">
                 <p className="text-xs uppercase tracking-[0.18em] text-zinc-400">Telefon</p>
-                <p className="mt-2 text-xl font-bold text-zinc-900">{companyDetails.phone}</p>
+                <p className="mt-2 break-all text-base font-bold text-zinc-900 sm:text-xl">{companyDetails.phone}</p>
               </div>
               <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-5">
                 <p className="text-xs uppercase tracking-[0.18em] text-zinc-400">E-Mail</p>
-                <p className="mt-2 text-xl font-bold text-zinc-900">{companyDetails.email}</p>
+                <p className="mt-2 break-all text-base font-bold text-zinc-900 sm:text-xl">{companyDetails.email}</p>
               </div>
             </div>
           </Card>

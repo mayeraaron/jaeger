@@ -15,7 +15,7 @@ export function ImagePlaceholder({
     >
       <div className="industrial-grid absolute inset-0 opacity-30" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,220,2,0.08),transparent_40%)]" />
-      <div className="relative flex aspect-[4/3] min-h-[18rem] flex-col justify-between p-6 sm:p-8">
+      <div className="relative flex aspect-[4/3] flex-col justify-between p-6 sm:p-8">
         <div>
           <p className="text-xs font-bold uppercase tracking-[0.28em] text-brand-500">
             {eyebrow}

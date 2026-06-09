@@ -58,7 +58,7 @@ export default function Home() {
                 </span>
               </div>
 
-              <h1 className="flex flex-col gap-2 text-[clamp(2.8rem,8.5vw,7.5rem)] font-black uppercase leading-none tracking-tight">
+              <h1 className="flex flex-col gap-2 text-[clamp(1rem,7vw,7.5rem)] font-black uppercase leading-none tracking-tight">
                 <span className="text-zinc-900">REINIGUNGSTECHNIK</span>
                 <span>
                   <span className="inline-block bg-brand-500 px-4 py-2 text-zinc-900">
