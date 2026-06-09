@@ -8,6 +8,7 @@ import {
   trustFactors,
 } from "@/data/about";
 import { ImagePlaceholder } from "@/components/services/image-placeholder";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Container } from "@/components/ui/container";
@@ -37,7 +38,27 @@ export default function UeberUnsPage() {
             </Button>
           </>
         }
-        aside={<ImagePlaceholder label="Bildblock Unternehmen" eyebrow="Jäger GmbH" />}
+        aside={
+          <div className="relative overflow-hidden rounded-3xl shadow-xl">
+            <div className="relative aspect-[5/2]">
+              <Image
+                src="/images/gebaeude.webp"
+                alt="Jäger GmbH Firmengebäude in Klaus, Vorarlberg"
+                fill
+                sizes="(max-width: 1024px) 100vw, 45vw"
+                className="object-cover object-center"
+                priority
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-zinc-900/80 via-zinc-900/20 to-transparent px-6 py-5">
+                <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand-500">
+                  Jäger GmbH
+                </p>
+                <p className="mt-1 text-sm text-white">Treietstraße 2a · Klaus, Vorarlberg</p>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-brand-500" />
+            </div>
+          </div>
+        }
       />
 
       <Container>

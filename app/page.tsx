@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import { ContactDetails } from "@/components/company/contact-details";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import { Card } from "@/components/ui/card";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
@@ -48,34 +49,60 @@ export default function Home() {
         />
 
         <Container className="relative z-10 py-20 sm:py-28">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-brand-500/40 bg-brand-500/10 px-4 py-1.5">
-            <span className="h-1.5 w-1.5 rounded-full bg-brand-500" aria-hidden="true" />
-            <span className="text-xs font-bold uppercase tracking-[0.22em] text-brand-600">
-              Ihr Partner für Baumaschinen
-            </span>
-          </div>
+          <div className="grid items-center gap-12 lg:grid-cols-[1fr_480px]">
+            <div>
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-brand-500/40 bg-brand-500/10 px-4 py-1.5">
+                <span className="h-1.5 w-1.5 rounded-full bg-brand-500" aria-hidden="true" />
+                <span className="text-xs font-bold uppercase tracking-[0.22em] text-brand-600">
+                  Ihr Partner für Baumaschinen
+                </span>
+              </div>
 
-          <h1 className="text-[clamp(2.8rem,8.5vw,7.5rem)] font-black uppercase leading-[0.9] tracking-tight">
-            <span className="block text-zinc-900">REINIGUNGSTECHNIK</span>
-            <span className="block">
-              <span className="inline-block bg-brand-500 px-3 py-1 text-zinc-900">
-                BAUMASCHINEN
-              </span>
-            </span>
-            <span className="block text-zinc-900">MIETPARK</span>
-          </h1>
+              <h1 className="flex flex-col gap-2 text-[clamp(2.8rem,8.5vw,7.5rem)] font-black uppercase leading-none tracking-tight">
+                <span className="text-zinc-900">REINIGUNGSTECHNIK</span>
+                <span>
+                  <span className="inline-block bg-brand-500 px-4 py-2 text-zinc-900">
+                    BAUMASCHINEN
+                  </span>
+                </span>
+                <span className="text-zinc-900">MIETPARK</span>
+              </h1>
 
-          <p className="mt-10 max-w-xl text-lg leading-relaxed text-zinc-600 sm:text-xl">
-            Wir sind Ihr zuverlässiger Partner für Baumaschinen, Reinigungstechnik, Strahltechnik
-            und Industriereinigung. Mit langjähriger Branchenerfahrung bieten wir Geräte nach
-            höchsten Standards und individuellem Service.
-          </p>
+              <p className="mt-10 max-w-xl text-lg leading-relaxed text-zinc-600 sm:text-xl">
+                Wir sind Ihr zuverlässiger Partner für Baumaschinen, Reinigungstechnik, Strahltechnik
+                und Industriereinigung. Mit langjähriger Branchenerfahrung bieten wir Geräte nach
+                höchsten Standards und individuellem Service.
+              </p>
 
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-            <Button href="/leistungen">Unsere Leistungen →</Button>
-            <Button href="/mietpark" variant="secondary">
-              Mietpark entdecken
-            </Button>
+              <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+                <Button href="/leistungen">Unsere Leistungen →</Button>
+                <Button href="/mietpark" variant="secondary">
+                  Mietpark entdecken
+                </Button>
+              </div>
+            </div>
+
+            <div className="hidden lg:block">
+              <div className="relative overflow-hidden rounded-3xl shadow-2xl">
+                <div className="relative aspect-[5/2]">
+                  <Image
+                    src="/images/gebaeude.webp"
+                    alt="Jäger GmbH Firmengebäude in Klaus, Vorarlberg"
+                    fill
+                    sizes="480px"
+                    className="object-cover object-center"
+                    priority
+                  />
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-zinc-900/80 via-zinc-900/20 to-transparent px-6 py-5">
+                    <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand-500">
+                      Jäger GmbH
+                    </p>
+                    <p className="mt-1 text-sm text-white">Treietstraße 2a · Klaus, Vorarlberg</p>
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-brand-500" />
+                </div>
+              </div>
+            </div>
           </div>
         </Container>
       </section>
