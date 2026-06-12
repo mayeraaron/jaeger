@@ -8,7 +8,7 @@ import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
 import { companyDetails } from "@/data/company";
 import { newsItems } from "@/data/news";
-import { rentalBenefits, rentalHighlights } from "@/data/rental";
+import { rentalHighlights } from "@/data/rental";
 import { serviceCards } from "@/data/services";
 import { buildMetadata } from "@/lib/seo";
 
@@ -185,53 +185,28 @@ export default function Home() {
           title="Mietpark mit über 100 Maschinen für kurzfristige und planbare Einsätze."
           description="Mit unserer flexiblen Mietlösung können Sie genau die Ausrüstung nutzen, die Sie benötigen – genau dann, wenn Sie sie brauchen."
         >
-          <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(320px,0.8fr)]">
-            <Card className="p-8">
-              <p className="text-sm uppercase tracking-[0.24em] text-brand-500">
-                Mietlösungen mit System
-              </p>
-              <h3 className="mt-4 max-w-2xl text-2xl font-semibold tracking-tight text-zinc-900">
-                Von Reinigungsgeräten über Strahltechnik bis zu Baumaschinen steht eine breite
-                Auswahl an Mietmaschinen für unterschiedliche Einsatzbereiche bereit.
-              </h3>
-              <ul className="mt-8 grid gap-4 sm:grid-cols-2">
-                {rentalHighlights.map((item) => (
-                  <li
-                    key={item}
-                    className="rounded-2xl border border-zinc-200 bg-zinc-50 px-5 py-4 text-sm text-zinc-700"
-                  >
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </Card>
-
-            <Card className="flex flex-col justify-between p-8">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.28em] text-brand-500">
-                  Schnell verfügbar
-                </p>
-                <h3 className="mt-4 text-2xl font-bold text-zinc-900">
-                  Mietmaschinen für kurzfristige Anforderungen und sauber planbare Einsätze.
-                </h3>
-              </div>
-              <ul className="mt-8 space-y-3">
-                {rentalBenefits.map((item) => (
-                  <li
-                    key={item}
-                    className="rounded-2xl border border-zinc-200 bg-zinc-50 px-4 py-3 text-sm text-zinc-700"
-                  >
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-8">
-                <Button href="/mietpark" variant="secondary">
-                  Zum Mietpark
-                </Button>
-              </div>
-            </Card>
-          </div>
+          <Card className="p-8">
+            <p className="text-sm uppercase tracking-[0.24em] text-brand-500">
+              Mietlösungen mit System
+            </p>
+            <h3 className="mt-4 max-w-3xl text-2xl font-semibold tracking-tight text-zinc-900">
+              Von Reinigungsgeräten über Strahltechnik bis zu Baumaschinen steht eine breite
+              Auswahl an Mietmaschinen für unterschiedliche Einsatzbereiche bereit.
+            </h3>
+            <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {rentalHighlights.map((item) => (
+                <li key={item} className="flex items-center gap-3 text-sm text-zinc-700">
+                  <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-brand-500" aria-hidden="true" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <div className="mt-8">
+              <Button href="/mietpark" variant="secondary">
+                Zum Mietpark
+              </Button>
+            </div>
+          </Card>
         </Section>
 
         <Section
