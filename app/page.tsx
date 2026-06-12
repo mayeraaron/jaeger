@@ -40,11 +40,11 @@ export default function Home() {
       <section className="relative flex min-h-screen items-center overflow-hidden border-b border-zinc-200 bg-white">
         <div className="industrial-grid absolute inset-0 opacity-[0.045]" aria-hidden="true" />
         <div
-          className="absolute -right-40 -top-40 h-[700px] w-[700px] rounded-full bg-brand-500/20 blur-3xl"
+          className="absolute -right-20 -top-20 h-[200px] w-[200px] rounded-full bg-brand-500/10 blur-3xl sm:-right-40 sm:-top-40 sm:h-[700px] sm:w-[700px] sm:bg-brand-500/20"
           aria-hidden="true"
         />
         <div
-          className="absolute -bottom-32 -left-32 h-[500px] w-[500px] rounded-full bg-brand-500/10 blur-3xl"
+          className="absolute -bottom-16 -left-16 h-[150px] w-[150px] rounded-full bg-brand-500/10 blur-3xl sm:-bottom-32 sm:-left-32 sm:h-[500px] sm:w-[500px]"
           aria-hidden="true"
         />
 
