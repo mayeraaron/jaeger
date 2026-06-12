@@ -71,6 +71,14 @@ export default function DatenschutzPage() {
           ],
         },
         {
+          heading: "Google Maps",
+          paragraphs: [
+            "Auf unserer Kontaktseite verwenden wir den Kartendienst Google Maps der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Durch die Einbindung von Google Maps kann Google Daten über Ihren Websitebesuch erheben, insbesondere Ihre IP-Adresse sowie Informationen über Ihren Browser.",
+            "Die Nutzung von Google Maps erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der anschaulichen Darstellung unseres Standorts). Wenn Sie die Google Maps-Karte auf unserer Seite aufrufen, stimmen Sie der Verarbeitung durch Google gemäß den Google-Datenschutzbestimmungen zu.",
+            "Weitere Informationen zur Datenverarbeitung durch Google finden Sie unter: policies.google.com/privacy",
+          ],
+        },
+        {
           heading: "Lokaler Browserspeicher (localStorage)",
           paragraphs: [
             "Diese Website verwendet keine Tracking- oder Analyse-Cookies. Zur Speicherung Ihrer Bestätigung des Datenschutzhinweises wird ausschließlich der lokale Browserspeicher (localStorage) Ihres Endgeräts genutzt. Dabei wird ein einzelner Eintrag ohne personenbezogene Daten gesetzt, der lediglich festhält, dass Sie den Hinweis zur Kenntnis genommen haben.",

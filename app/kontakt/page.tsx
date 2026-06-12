@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 
 import { ContactDetails } from "@/components/company/contact-details";
 import { ContactForm } from "@/components/contact/contact-form";
-import { ImagePlaceholder } from "@/components/services/image-placeholder";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Container } from "@/components/ui/container";
@@ -98,10 +97,21 @@ export default function KontaktPage() {
 
         <Section
           eyebrow="Standort"
-          title="Karten-Platzhalter für Anfahrt und Lage."
-          description="Der Bereich ist vorbereitet, um später eine eingebettete Karte oder eine statische Lagegrafik zu integrieren."
+          title="So finden Sie uns in Klaus, Vorarlberg."
+          description="Jäger GmbH · Treietstraße 2a · 6833 Klaus"
         >
-          <ImagePlaceholder label="Karten-Platzhalter Standort Jäger GmbH" eyebrow="Karte" />
+          <div className="overflow-hidden rounded-3xl border border-zinc-200 shadow-sm">
+            <iframe
+              src="https://maps.google.com/maps?q=Treietstra%C3%9Fe+2a%2C+6833+Klaus%2C+%C3%96sterreich&output=embed&z=16"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Jäger GmbH Standort – Treietstraße 2a, 6833 Klaus"
+            />
+          </div>
         </Section>
       </Container>
     </main>
