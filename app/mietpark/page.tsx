@@ -55,7 +55,7 @@ export default function MietparkPage() {
               </p>
             </article>
             <Card className="p-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-brand-500">
+              <p className="text-xs font-bold uppercase tracking-[0.28em] text-label-text">
                 Für jeden Horizont
               </p>
               <div className="mt-6 grid gap-4">

@@ -30,7 +30,7 @@ export function LegalPage({ eyebrow, title, description, sections }: LegalPagePr
             Zur Startseite
           </Link>
           <header className="mb-12 border-b border-zinc-200 pb-10 sm:mb-14 sm:pb-12">
-            <p className="mb-3 text-xs font-bold uppercase tracking-[0.28em] text-brand-500">
+            <p className="mb-3 text-xs font-bold uppercase tracking-[0.28em] text-label-text">
               {eyebrow}
             </p>
             <h1 className="text-balance text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl">

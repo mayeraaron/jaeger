@@ -50,7 +50,7 @@ export default function UeberUnsPage() {
                 priority
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-zinc-900/80 via-zinc-900/20 to-transparent px-6 py-5">
-                <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand-500">
+                <p className="text-xs font-bold uppercase tracking-[0.22em] text-label-text">
                   Jäger GmbH
                 </p>
                 <p className="mt-1 text-sm text-white">Treietstraße 2a · Klaus, Vorarlberg</p>

@@ -41,7 +41,7 @@ export function PageHero({
           )}
         >
           <header className="max-w-4xl">
-            <p className="mb-5 text-xs font-bold uppercase tracking-[0.32em] text-brand-500">
+            <p className="mb-5 text-xs font-bold uppercase tracking-[0.32em] text-label-text">
               {eyebrow}
             </p>
             <h1 className="text-balance text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl lg:text-6xl">

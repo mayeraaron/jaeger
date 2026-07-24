@@ -52,7 +52,7 @@ export default function Home() {
             <div>
               <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-brand-500/40 bg-brand-500/10 px-4 py-1.5">
                 <span className="h-1.5 w-1.5 rounded-full bg-brand-500" aria-hidden="true" />
-                <span className="text-xs font-bold uppercase tracking-[0.22em] text-brand-600">
+                <span className="text-xs font-bold uppercase tracking-[0.22em] text-zinc-900">
                   Ihr Partner für Baumaschinen
                 </span>
               </div>
@@ -93,7 +93,7 @@ export default function Home() {
                     priority
                   />
                   <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-zinc-900/80 via-zinc-900/20 to-transparent px-6 py-5">
-                    <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand-500">
+                    <p className="text-xs font-bold uppercase tracking-[0.22em] text-label-text">
                       Jäger GmbH
                     </p>
                     <p className="mt-1 text-sm text-white">Treietstraße 2a · Klaus, Vorarlberg</p>
@@ -151,7 +151,7 @@ export default function Home() {
                     key={pillar.title}
                     className="rounded-2xl border border-zinc-200 bg-zinc-50 p-5"
                   >
-                    <h3 className="text-sm font-bold uppercase tracking-[0.18em] text-brand-500">
+                    <h3 className="text-sm font-bold uppercase tracking-[0.18em] text-label-text">
                       {pillar.title}
                     </h3>
                     <p className="mt-3 text-sm leading-7 text-zinc-600">{pillar.text}</p>
@@ -162,7 +162,7 @@ export default function Home() {
 
             <Card className="flex flex-col justify-between p-8">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.28em] text-brand-500">
+                <p className="text-xs font-bold uppercase tracking-[0.28em] text-label-text">
                   Standortvorteil
                 </p>
                 <h3 className="mt-4 text-2xl font-bold text-zinc-900">
@@ -185,7 +185,7 @@ export default function Home() {
           description="Mit unserer flexiblen Mietlösung können Sie genau die Ausrüstung nutzen, die Sie benötigen – genau dann, wenn Sie sie brauchen."
         >
           <Card className="p-8">
-            <p className="text-sm uppercase tracking-[0.24em] text-brand-500">
+            <p className="text-sm font-bold uppercase tracking-[0.24em] text-label-text">
               Mietlösungen mit System
             </p>
             <h3 className="mt-4 max-w-3xl text-2xl font-semibold tracking-tight text-zinc-900">

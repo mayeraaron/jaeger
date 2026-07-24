@@ -13,7 +13,7 @@ export default function NotFound() {
     <main id="main-content" className="flex flex-1 items-center">
       <Container className="py-24 sm:py-32">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-xs font-bold uppercase tracking-[0.28em] text-brand-500">
+          <p className="text-xs font-bold uppercase tracking-[0.28em] text-label-text">
             404
           </p>
           <h1 className="mt-4 text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl">

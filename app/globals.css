@@ -6,6 +6,8 @@
   --brand-400: #ffe44a;
   --brand-500: #ffdc02;
   --brand-600: #e6c700;
+  /* ~12% darker than --brand-500, reserved for small uppercase label text (legibility) — brand-500/600 stay untouched for logo/buttons/accents */
+  --label-text: #e0c202;
   --zinc-950: #09090b;
   --zinc-900: #18181b;
   --zinc-800: #27272a;
@@ -26,6 +28,7 @@
   --color-brand-400: var(--brand-400);
   --color-brand-500: var(--brand-500);
   --color-brand-600: var(--brand-600);
+  --color-label-text: var(--label-text);
   --color-zinc-950: var(--zinc-950);
   --color-zinc-900: var(--zinc-900);
   --color-zinc-800: var(--zinc-800);
