@@ -53,14 +53,6 @@ export default function KontaktPage() {
 
       <Container>
         <Section
-          eyebrow="Kontaktinformationen"
-          title="Alle wichtigen Informationen direkt sichtbar."
-          description="Die Kontaktangaben sind bewusst prominent platziert und in mobilen Ansichten leicht erfassbar."
-        >
-          <ContactDetails className="xl:max-w-none" cardClassName="p-7" />
-        </Section>
-
-        <Section
           eyebrow="Anfrage"
           title="Kontaktformular für schnelle Anfragen."
           description="Das Formular ist als klarer, mobiler Einstieg für Anfragen vorbereitet und kann später an eine Backend- oder Mail-Lösung angebunden werden."
@@ -93,6 +85,14 @@ export default function KontaktPage() {
               </div>
             </Card>
           </div>
+        </Section>
+
+        <Section
+          eyebrow="Kontaktinformationen"
+          title="Alle wichtigen Informationen direkt sichtbar."
+          description="Die Kontaktangaben sind bewusst prominent platziert und in mobilen Ansichten leicht erfassbar."
+        >
+          <ContactDetails className="xl:max-w-none" cardClassName="p-7" />
         </Section>
 
         <Section
