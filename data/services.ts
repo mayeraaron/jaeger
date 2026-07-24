@@ -85,11 +85,10 @@ export const serviceDetails: ServiceDetail[] = [
     overviewText:
       "Moderne Baumaschinen und Zubehör für Baustelle und Infrastruktur – mit fachkundiger Beratung und flexiblen Mietoptionen für zeitkritische Projekte.",
     description: [
-      "Das Sortiment umfasst Estrichpumpen, Kompressoren, Bagger, Stromaggregate und Betonschleifmaschinen von führenden Herstellern für professionelle Einsätze im Bau- und Infrastrukturbereich.",
+      "Das Sortiment umfasst Kompressoren, Bagger, Stromaggregate und Betonschleifmaschinen von führenden Herstellern für professionelle Einsätze im Bau- und Infrastrukturbereich.",
       "Neben dem Kauf steht auch ein flexibler Mietservice zur Verfügung – mit modernen, regelmäßig gewarteten Maschinen und fachkundiger Beratung für die Auswahl der richtigen Technik für Ihr Projekt.",
     ],
     benefits: [
-      "Estrichpumpen für Boden- und Deckenestrich",
       "Kompressoren für Baustellen und gewerbliche Anwendungen",
       "Bagger für Erd- und Abbrucharbeiten",
       "Stromaggregate für netzunabhängige Stromversorgung",

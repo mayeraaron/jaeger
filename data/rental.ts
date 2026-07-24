@@ -3,7 +3,6 @@ export const rentalHighlights = [
   "Rüttelplatten",
   "Hochdruckreiniger",
   "Kompressoren",
-  "Estrichpumpen",
   "Industriestaubsauger",
   "Betonmischer",
   "Teppich- und Bodenreiniger",
@@ -42,7 +41,7 @@ export const rentalCategories = [
   },
   {
     title: "Baumaschinen",
-    text: "Bagger, Rüttelplatten, Kompressoren, Estrichpumpen, Stromaggregate und Betonschleifmaschinen für Baustelle und Infrastruktur.",
+    text: "Bagger, Rüttelplatten, Kompressoren, Stromaggregate und Betonschleifmaschinen für Baustelle und Infrastruktur.",
   },
   {
     title: "Zubehör & Ergänzungen",
