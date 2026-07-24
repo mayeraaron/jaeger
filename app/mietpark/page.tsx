@@ -112,34 +112,6 @@ export default function MietparkPage() {
         </Section>
 
         <Section
-          eyebrow="Download"
-          title="Mietpreisliste direkt als PDF herunterladen."
-          description="Der Download-Bereich schafft einen schnellen Zugang zu Preis- und Übersichtsunterlagen."
-        >
-          <Card className="grid gap-8 p-8 lg:grid-cols-[minmax(0,1fr)_minmax(280px,0.72fr)]">
-            <div>
-              <h2 className="text-2xl font-bold tracking-tight text-zinc-900">
-                Mietpreisliste der Jäger GmbH
-              </h2>
-              <p className="mt-4 max-w-2xl text-sm leading-7 text-zinc-600">
-                Die aktuelle Übersicht ist als PDF vorbereitet und kann direkt heruntergeladen
-                werden. Für konkrete Verfügbarkeiten und projektbezogene Konditionen empfiehlt
-                sich die direkte Abstimmung mit dem Team der Jäger GmbH.
-              </p>
-            </div>
-            <div className="flex items-center justify-start lg:justify-end">
-              <Button
-                href="/downloads/jaeger-mietpreisliste.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                PDF herunterladen
-              </Button>
-            </div>
-          </Card>
-        </Section>
-
-        <Section
           eyebrow="Anfrage"
           title="Mietmaschine anfragen und passenden Einsatz abstimmen."
           description="Der Abschlussbereich führt Interessenten klar zur Kontaktaufnahme per Formular oder Telefon."
