@@ -7,7 +7,6 @@ import { Card } from "@/components/ui/card";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
 import { companyDetails } from "@/data/company";
-import { newsItems } from "@/data/news";
 import { rentalHighlights } from "@/data/rental";
 import { serviceCards } from "@/data/services";
 import { buildMetadata } from "@/lib/seo";
@@ -207,50 +206,6 @@ export default function Home() {
               </Button>
             </div>
           </Card>
-        </Section>
-
-        <Section
-          id="aktuelles"
-          eyebrow="Aktuelles"
-          title="Neuigkeiten aus Mietpark, Sortiment und Beratung."
-          description="Die Sektion schafft Platz für aktuelle Hinweise und macht sichtbar, dass sich Maschinenbestand und Lösungen laufend weiterentwickeln."
-        >
-          <div className="grid gap-6 lg:grid-cols-2">
-            {newsItems.slice(0, 2).map((item, index) => (
-              <article key={item.title}>
-                <Card className="flex h-full flex-col">
-                  <p className="text-xs font-semibold uppercase tracking-[0.28em] text-brand-500">
-                    Aktuell {index + 1}
-                  </p>
-                  <h3 className="mt-4 text-2xl font-bold text-zinc-900">{item.title}</h3>
-                  <p className="mt-4 flex-1 text-sm leading-7 text-zinc-600">{item.excerpt}</p>
-                  <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-                    {item.href ? (
-                      <Button href={item.href} variant="ghost" size="compact">
-                        {item.ctaLabel}
-                      </Button>
-                    ) : null}
-                    {item.pdfHref ? (
-                      <Button
-                        href={item.pdfHref}
-                        variant="ghost"
-                        size="compact"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {item.ctaLabel}
-                      </Button>
-                    ) : null}
-                  </div>
-                </Card>
-              </article>
-            ))}
-          </div>
-          <div className="mt-8">
-            <Button href="/aktuelles" variant="secondary">
-              Alle Beiträge ansehen
-            </Button>
-          </div>
         </Section>
 
         <Section

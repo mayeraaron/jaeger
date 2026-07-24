@@ -18,7 +18,6 @@ export const navigationItems: NavItem[] = [
   { label: "Mietpark", href: "/mietpark" },
   { label: "Über uns", href: "/ueber-uns" },
   { label: "Kontakt", href: "/kontakt" },
-  { label: "Aktuelles", href: "/aktuelles" },
 ];
 
 export const legalNavigationItems: NavItem[] = [

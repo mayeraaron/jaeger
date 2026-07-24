@@ -19,7 +19,6 @@ const quickLinks = [
   { label: "Mietpark", href: "/mietpark" },
   { label: "Über uns", href: "/ueber-uns" },
   { label: "Kontakt", href: "/kontakt" },
-  { label: "Aktuelles", href: "/aktuelles" },
 ];
 
 export function SiteFooter() {

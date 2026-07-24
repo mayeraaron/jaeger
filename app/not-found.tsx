@@ -35,7 +35,6 @@ export default function NotFound() {
                 { label: "Leistungen", href: "/leistungen" },
                 { label: "Mietpark", href: "/mietpark" },
                 { label: "Über uns", href: "/ueber-uns" },
-                { label: "Aktuelles", href: "/aktuelles" },
               ].map((link) => (
                 <Link
                   key={link.label}
